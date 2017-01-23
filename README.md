@@ -6,11 +6,11 @@ jqery plugins library
 $(function() {
   $('.accordion').accordion(
     accordionsOptions = {
-      itemClass: 'accordion-item',
-      dataClass: 'accordion-data',
-      openClass: 'open',
-      speedUp: 500,
-      speedDown: 500
+      itemClass: 'accordion-item', // класс блока по которому происходит клик
+      dataClass: 'accordion-data', // класс блока который должен открываться
+      openClass: 'open',           // класс подстовляемый блоку при клике
+      speedUp: 500,                // скорость показа анимации
+      speedDown: 500               // скорость скрытия анимации
     }
   );
 });
