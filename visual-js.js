@@ -1,4 +1,7 @@
 (function($, window) {
+  
+  //accordion
+  
   $.fn.accordion = function() {
     return this.each(function() {
 
@@ -24,4 +27,32 @@
       }
     });
   }
+  
+  // tabs
+  
+  $.fn.myTabs = function() {
+    return this.each(function() {
+      var $this       = $(this),
+        tabsLinks   = $this.find('.tabs-links li'),
+        tabsBlocks  = $this.find('.tabs-blocks .tabs-block'),
+        activeClass = 'active';
+
+      tabsLinks.on('click.myTabs', onLinkClick);
+
+      function onLinkClick(event) {
+        var target = $(event.target).closest('li'),
+          index  = target.index();
+
+        tabsLinks.removeClass(activeClass);
+        target.addClass(activeClass);
+
+        tabsBlocks
+          .removeClass(activeClass)
+          .eq(index)
+          .addClass(activeClass);
+      }
+
+    });
+  }
+
 })(jQuery, window);
