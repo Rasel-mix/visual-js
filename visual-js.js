@@ -25,15 +25,3 @@
     });
   }
 })(jQuery, window);
-
-$(function() {
-  $('.accordion').accordion(
-    accordionsOptions = {
-      itemClass: 'accordion-item',
-      dataClass: 'accordion-data',
-      openClass: 'open',
-      speedUp: 500,
-      speedDown: 500
-    }
-  );
-});
