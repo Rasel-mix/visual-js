@@ -15,3 +15,14 @@ $(function() {
   );
 });
 ```
+Вызов табов
+```javascript
+$(function() {
+  $('.tabs').myTabs(
+		tabsOptions = {
+			tabsItem: '.tabs-links li', // блок по которому клкаем
+			tabsBlock: '.tabs-blocks .tabs-block' // блок который открывается
+		}
+	);
+});
+```
