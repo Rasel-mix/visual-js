@@ -34,7 +34,7 @@
     return this.each(function() {
       var $this       = $(this),
         tabsLinks   = $this.find(tabsOptions.tabsItem),
-        tabsBlocks  = $this.find(tabsOptions.tabsBlock.),
+        tabsBlocks  = $this.find(tabsOptions.tabsBlock),
         activeClass = 'active';
 
       tabsLinks.on('click.myTabs', onLinkClick);
