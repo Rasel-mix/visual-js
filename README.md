@@ -20,7 +20,7 @@ $(function() {
 $(function() {
   $('.tabs').myTabs(
     tabsOptions = {
-     tabsItem: '.tabs-links li', // блок по которому клкаем
+     tabsItem: '.tabs-links li', // блок по которому кликаем
      tabsBlock: '.tabs-blocks .tabs-block' // блок который открывается
     }
   );
